@@ -11,3 +11,7 @@ https://docs.google.com/document/d/14XzCq9pUGbvBs5RyH8hZbBI0JeNbmQzGiVPLM6QyTP8/
 Link to 5 to 10 min video presentation.
 
 https://drive.google.com/file/d/1vGkz6CkD6YIkQXrvy8Gaupsxfiny5JP_/view?usp=sharing 
+
+Anything I forgot to mention:
+
+Codes for Rim Shader, Toon, Metallic, Diffuse, Ambient, Specular, LUTcamera taken from lectures 4 and 5 from intro to computer graphics.
