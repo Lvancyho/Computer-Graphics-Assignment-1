@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    public float mouseSensitivity = 100f;
+    public float moveSpeed = 5f; //player movementspeed in inspecter
+    public float mouseSensitivity = 100f; //mouse sens in inspecter
 
-    private float xRotation = 0f;
-    private Transform playerCamera;
-    private bool isCursorLocked = true;
+    private float xRotation = 0f; //x represnets vertical rotation
+    private Transform playerCamera; //refers to the camera
+    private bool isCursorLocked = true; //the state of the cursor
 
     private void Start()
     {
@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            ToggleCursor();
+            ToggleCursor(); //unlocks the cursor
         }
 
         // Only allow movement and camera rotation when the cursor is locked
@@ -40,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 direction = transform.right * horizontal + transform.forward * vertical;
         transform.position += direction * moveSpeed * Time.deltaTime;
+        //gets the inputs and calculates/updates the position
     }
 
     private void RotateCamera()
@@ -52,31 +53,32 @@ public class PlayerMovement : MonoBehaviour
 
         playerCamera.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         transform.Rotate(Vector3.up * mouseX);
+        //gets the inputs and calculates/updates the camera
     }
 
     private void ToggleCursor()
     {
         if (isCursorLocked)
         {
-            UnlockCursor();
+            UnlockCursor(); //view cursor
         }
         else
         {
-            LockCursor();
+            LockCursor(); //hide cursor
         }
     }
 
     private void LockCursor()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-        isCursorLocked = true;
+        Cursor.lockState = CursorLockMode.Locked; //locks cursor
+        Cursor.visible = false; //hides cursor
+        isCursorLocked = true; //updates state of cursor
     }
 
     private void UnlockCursor()
     {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-        isCursorLocked = false;
+        Cursor.lockState = CursorLockMode.None; //unlocks cursor
+        Cursor.visible = true; //shows cursor
+        isCursorLocked = false; //updates state of cursor
     }
 }

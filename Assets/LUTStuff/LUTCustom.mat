@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LUTShader
+  m_Name: LUTCustom
   m_Shader: {fileID: 4800000, guid: c8c4c537576843349826e421c9fddac6, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
