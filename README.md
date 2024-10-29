@@ -10,5 +10,3 @@ https://docs.google.com/document/d/14XzCq9pUGbvBs5RyH8hZbBI0JeNbmQzGiVPLM6QyTP8/
 
 Link to 5 to 10 min video presentation following an elevator-pitch style. The contributions of each team member must be clear. Ensure the video can be watched and does not require access requests.
 
-
-
