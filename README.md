@@ -8,5 +8,6 @@ The explanation must be supported with diagrams for the code that was implemente
 
 https://docs.google.com/document/d/14XzCq9pUGbvBs5RyH8hZbBI0JeNbmQzGiVPLM6QyTP8/edit?usp=sharing 
 
-Link to 5 to 10 min video presentation following an elevator-pitch style. The contributions of each team member must be clear. Ensure the video can be watched and does not require access requests.
+Link to 5 to 10 min video presentation.
 
+https://drive.google.com/file/d/1vGkz6CkD6YIkQXrvy8Gaupsxfiny5JP_/view?usp=sharing 
