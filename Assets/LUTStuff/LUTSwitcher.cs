@@ -1,41 +1,25 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class LUTSwitcher : MonoBehaviour
 {
-    public MonoBehaviour CustomLUT; //refers to custom LUT script
-    public MonoBehaviour WarmLUT; //warm script
-    public MonoBehaviour CoolLUT; //cool script
+    public List<Material> LUTs = new List<Material>(); // Created a list to hold the LUT materials
+    public ScreenCameraShader cameraShader; // Grabs the camera shader to display the LUT
 
-    private MonoBehaviour currentScript; //current active LUT script
-
-    public void SetActiveScript(MonoBehaviour scriptToToggle)
+    private void Start()
     {
-        // If the selected script is already active, disable it and clear currentScript
-        if (currentScript == scriptToToggle)
-        {
-            scriptToToggle.enabled = false;
-            currentScript = null;
-        }
-        else
-        {
-            // Disable the currently active script if it exists
-            if (currentScript != null)
-            {
-                currentScript.enabled = false;
-            }
+        cameraShader = Camera.main.GetComponent<ScreenCameraShader>(); // Get the camera shader script on game start
+    }
 
-            // Enable the selected script
-            if (scriptToToggle != null)
-            {
-                scriptToToggle.enabled = true;
-            }
-
-            currentScript = scriptToToggle;
-        }
+    // Function to change the LUT material
+    void SwitchActiveLUT(Material currentLUT)
+    {
+        cameraShader.m_renderMaterial = currentLUT;
     }
 
     // Call these from the UI buttons
-    public void ToggleCustomLUT() => SetActiveScript(CustomLUT);
-    public void ToggleWarmLUT() => SetActiveScript(WarmLUT);
-    public void ToggleCoolLUT() => SetActiveScript(CoolLUT);
+    public void ToggleCustomLUT() => SwitchActiveLUT(LUTs[0]);
+    public void ToggleWarmLUT() => SwitchActiveLUT(LUTs[1]);
+    public void ToggleCoolLUT() => SwitchActiveLUT(LUTs[2]);
+    public void ToggleNoLUT() => SwitchActiveLUT(LUTs[3]);
 }
