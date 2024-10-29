@@ -7,22 +7,30 @@ public class PlayerMovement : MonoBehaviour
 
     private float xRotation = 0f;
     private Transform playerCamera;
+    private bool isCursorLocked = true;
 
     private void Start()
     {
-        // Lock the cursor to the center of the screen
-        Cursor.lockState = CursorLockMode.Locked;
+        // Lock the cursor to the center of the screen initially
         playerCamera = Camera.main.transform;
-
-        // Reset camera rotation at the start
+        LockCursor();
         xRotation = 0f;
         playerCamera.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
     }
 
     private void Update()
     {
-        MovePlayer();
-        RotateCamera();
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            ToggleCursor();
+        }
+
+        // Only allow movement and camera rotation when the cursor is locked
+        if (isCursorLocked)
+        {
+            MovePlayer();
+            RotateCamera();
+        }
     }
 
     private void MovePlayer()
@@ -44,5 +52,31 @@ public class PlayerMovement : MonoBehaviour
 
         playerCamera.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         transform.Rotate(Vector3.up * mouseX);
+    }
+
+    private void ToggleCursor()
+    {
+        if (isCursorLocked)
+        {
+            UnlockCursor();
+        }
+        else
+        {
+            LockCursor();
+        }
+    }
+
+    private void LockCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        isCursorLocked = true;
+    }
+
+    private void UnlockCursor()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        isCursorLocked = false;
     }
 }
