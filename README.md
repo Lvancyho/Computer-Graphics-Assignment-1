@@ -24,7 +24,7 @@ Explanations:
 
 https://docs.google.com/document/d/14KzZ5pczn9FhKwL7o1OzUFP2hGVWSKkoi5rgIDW0WZA/edit?usp=sharing
 
-Link to video presentation:
+Link to video presentation: https://drive.google.com/file/d/1KTnK9--o6vyoVzVKFNY3BGCmFMQIdcbX/view?usp=sharing
 
 anything else i forgot to mention:
 
