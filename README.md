@@ -26,8 +26,6 @@ https://docs.google.com/document/d/14KzZ5pczn9FhKwL7o1OzUFP2hGVWSKkoi5rgIDW0WZA/
 
 Link to video presentation:
 
-https://drive.google.com/file/d/10M6BCaJAlD82NnSCBXtcG4dhEocvVdNI/view?usp=sharing
-
 anything else i forgot to mention:
 
-Codes for some shaders/mapping taken from lectures 8 and 9 and texturing created using photopea.com.
+Codes for some shaders/mapping taken from lectures 8 and 9, texturing created using photopea.com and the texture toggle script from https://discussions.unity.com/t/switching-between-two-textures-using-a-switch-multiple-parts-of-a-model/626209/2 
