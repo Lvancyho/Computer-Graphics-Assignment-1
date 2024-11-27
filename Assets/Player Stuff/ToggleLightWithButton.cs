@@ -2,16 +2,18 @@ using UnityEngine;
 
 public class ToggleLightWithButton : MonoBehaviour
 {
-    public Light directionalLight;
+    public Light[] directionalLight;
 
     public void ToggleLight()
     {
-        if (directionalLight != null)
+
+        foreach (Light light in directionalLight)
         {
-            directionalLight.enabled = !directionalLight.enabled;
-        }
-        else
-        {
+            if (light != null)
+            {
+
+                light.enabled = !light.enabled;
+            }
         }
     }
 }
