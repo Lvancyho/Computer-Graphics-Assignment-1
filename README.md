@@ -26,7 +26,7 @@ https://docs.google.com/document/d/14KzZ5pczn9FhKwL7o1OzUFP2hGVWSKkoi5rgIDW0WZA/
 
 Link to video presentation:
 
-insert link here:
+https://drive.google.com/file/d/10M6BCaJAlD82NnSCBXtcG4dhEocvVdNI/view?usp=sharing
 
 anything else i forgot to mention:
 
