@@ -22,7 +22,7 @@ The items implemented enhanced my scene by having new and creative assets to sho
 
 Explanations:
 
-insert link here:
+insert link here: https://docs.google.com/document/d/14KzZ5pczn9FhKwL7o1OzUFP2hGVWSKkoi5rgIDW0WZA/edit?usp=sharing
 
 Link to video presentation:
 
