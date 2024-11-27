@@ -15,3 +15,17 @@ https://drive.google.com/file/d/1vGkz6CkD6YIkQXrvy8Gaupsxfiny5JP_/view?usp=shari
 Anything I forgot to mention:
 
 Codes for Rim Shader, Toon, Metallic, Diffuse, Ambient, Specular, LUTcamera taken from lectures 4 and 5 from intro to computer graphics.
+
+Final Course Project Submission:
+
+The items implemented enhanced my scene by having new and creative assets to show off towards the end of the mesume. They also show my understanding of in class materials shown.
+
+Explanations:
+
+insert link here:
+
+Link to video presentation:
+
+insert link here:
+
+anything else i forgot to mention:
