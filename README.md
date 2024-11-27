@@ -22,10 +22,12 @@ The items implemented enhanced my scene by having new and creative assets to sho
 
 Explanations:
 
-insert link here: https://docs.google.com/document/d/14KzZ5pczn9FhKwL7o1OzUFP2hGVWSKkoi5rgIDW0WZA/edit?usp=sharing
+https://docs.google.com/document/d/14KzZ5pczn9FhKwL7o1OzUFP2hGVWSKkoi5rgIDW0WZA/edit?usp=sharing
 
 Link to video presentation:
 
 insert link here:
 
 anything else i forgot to mention:
+
+Codes for some shaders/mapping taken from lectures 8 and 9 and texturing created using photopea.com.
